@@ -12,10 +12,7 @@ function App() {
     const [breweries, setBreweries] = useState([]); // Tableau des brasseries qui seront définies après la récupération
     const [emptyResult, setEmptyResult] = useState(false); // Le résultat de la récupération est-il vide ?
 
-    /**
-     * Recherchez les brasseries à partir de l'API Open Brewery DB et définissez ces résultats
-     * à l'intérieur de l'état (brasseries).
-     */
+    
     const getBreweries = () => {
         fetch(`https://api.openbrewerydb.org/breweries?by_state=ohio&sort=type,name:asc&per_page=3/search?query=${input}`)
             .then((response) => response.json())
