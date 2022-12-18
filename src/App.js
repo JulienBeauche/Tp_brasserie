@@ -33,16 +33,13 @@ function App() {
             });
     };
 
-    /**
-     * Gérer l'effacement des résultats. Efface l'état pour
-     * le tableau des brasseries, les résultats booléens et la chaîne d'entrée.
-     */
+    
     const handleClearingResults = () => {
         setBreweries([]);
         setEmptyResult(false);
         setInput("");
     };
-
+//ajout de com pour test
     // Affichez les brasseries en tant qu'élément de liste par ordre alphabétique par nom de brasserie.
     const breweriesArr = breweries
         .sort(function (a, b) {
